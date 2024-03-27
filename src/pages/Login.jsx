@@ -27,7 +27,7 @@ function Login() {
     if (regPas1.current.value !== regPas2.current.value)
       return setServerResp({
         error: true,
-        message: 'Passwords do not match',
+        message: 'Passwords don\'t match',
       });
     const userObj = {
       username: regName.current.value,
