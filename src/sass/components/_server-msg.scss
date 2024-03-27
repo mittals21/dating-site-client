@@ -1,0 +1,12 @@
+.server-msg {
+  margin-top: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  overflow-wrap: break-word;
+
+  &__text {
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,28 @@
+.message {
+  padding: 0.5rem 2rem 1rem;
+  border-radius: 20px;
+
+  &__own {
+    background-color: var(--color-primary-light);
+    align-self: flex-end;
+    border-top-right-radius: 0;
+  }
+
+  &__others {
+    background-color: var(--color-secondary);
+    align-self: flex-start;
+    border-top-left-radius: 0;
+    color: white;
+  }
+
+  &__top {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    font-size: 1.6rem;
+  }
+
+  &__text {
+    font-size: 1.8rem;
+  }
+}

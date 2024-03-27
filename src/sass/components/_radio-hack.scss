@@ -1,0 +1,45 @@
+// RADIO BUTTONS HACK
+.container {
+  display: inline-block;
+  position: relative;
+  user-select: none;
+  cursor: pointer;
+}
+
+.gender-label {
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0 1rem;
+  border: 4px solid transparent;
+  border-radius: 100px;
+}
+
+.radio-toggle,
+.radio-body {
+  display: none;
+}
+
+.radio-toggle:checked ~ .radio-body {
+  display: block;
+}
+.radio-toggle:checked ~ .gender-label {
+  border-color: var(--color-secondary);
+}
+
+.radio-label {
+  cursor: pointer;
+  font-size: 2.25rem;
+  text-transform: uppercase;
+  padding: 1rem;
+  display: inline-block;
+  color: var(--color-primary-light);
+
+  text-align: center;
+  flex: 1;
+}
+
+.radio-body {
+  width: 100%;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}

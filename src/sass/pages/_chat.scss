@@ -1,0 +1,71 @@
+.chat {
+  background-image: url('../images/email-pattern.png');
+  box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.2);
+  background-size: cover;
+
+  &__hero {
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: calc(100vh - 5.7rem);
+  }
+
+  &__area {
+    background-color: white;
+    flex: 1;
+    overflow-y: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 2rem;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column-reverse;
+  }
+
+  &__panel {
+    background-color: var(--color-primary-light);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 1rem 1rem 2rem;
+  }
+
+  &__textarea {
+    width: calc(100%);
+    display: block;
+    font-family: inherit;
+    resize: none;
+    padding: 1rem;
+    border: none;
+    font-size: 1.8rem;
+    background-color: inherit;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__button {
+    margin-top: 0.5rem;
+    float: right;
+    color: var(--color-secondary);
+  }
+
+  &__close {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-size: 3rem;
+    cursor: pointer;
+    user-select: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .chat__hero {
+    margin: 0 auto;
+    padding: 1rem 0;
+  }
+}

@@ -1,0 +1,33 @@
+.checkbox-hack__input {
+  display: none;
+}
+
+.checkbox-hack__label {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+
+.checkbox-hack__body {
+  max-height: 0px;
+  overflow-y: hidden;
+
+  /*Transition time is increased to accomodate the height */
+  transition: max-height 1s cubic-bezier(0, 1, 0, 1);
+}
+
+.checkbox-hack__label::after,
+.checkbox-hack__label::before {
+  content: '﹀';
+  margin: 0 1rem;
+}
+
+.checkbox-hack__input:checked ~ .checkbox-hack__label::after,
+.checkbox-hack__input:checked ~ .checkbox-hack__label::before {
+  content: '︿';
+}
+
+.checkbox-hack__input:checked ~ .checkbox-hack__body {
+  max-height: 900px;
+  transition: max-height 1s linear;
+}

@@ -1,0 +1,46 @@
+:root {
+  --color-primary: rgb(245, 202, 194);
+  --color-primary-trans: rgba(245, 202, 194, 0.9);
+  --color-primary-light: rgb(250, 229, 223);
+  --color-primary-light-trans: rgb(250, 229, 223, 0.6);
+  --color-primary-dark: rgb(237, 121, 102);
+  --color-secondary: rgb(48, 49, 121);
+  --color-secondary-trans: rgb(48, 49, 121, 0.3);
+  --color-secondary-dark: rgb(20, 24, 80);
+  --color-grey-light: rgb(238, 238, 238);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; //sets 1rem = 10px;
+  font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden;
+}
+
+.page-container {
+  position: relative;
+  min-height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.center-V {
+  display: flex;
+  align-items: center;
+}
+
+.heart-backgroud {
+  background-image: url('../images/heart.webp');
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px var(--color-primary-light-trans);
+}

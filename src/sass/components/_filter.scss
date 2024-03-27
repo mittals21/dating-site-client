@@ -1,0 +1,21 @@
+.filter {
+  background-color: var(--color-primary-light);
+  padding: 2rem;
+
+  &__container {
+    max-width: 30rem;
+    margin: 0 auto;
+  }
+
+  &__gender {
+    margin: 1rem auto;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+  }
+
+  &__age-label {
+    display: flex;
+    justify-content: space-between;
+  }
+}

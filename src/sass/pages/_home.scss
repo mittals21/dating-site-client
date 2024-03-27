@@ -1,0 +1,73 @@
+.home-page {
+  background-image: url('../images/pipes.webp');
+  min-height: 100vh;
+  padding-bottom: 2rem;
+  padding-top: 1rem;
+}
+
+.hero {
+  max-width: 60rem;
+  margin: 4rem auto;
+  box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.2);
+
+  &__tab {
+    font-size: 2rem;
+    text-align: left;
+    user-select: none;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: var(--color-secondary-dark);
+  }
+
+  &__label {
+    background: linear-gradient(
+      130deg,
+      var(--color-primary-dark) 20%,
+      var(--color-primary) 80.9%,
+      white 81%
+    );
+    padding: 0.5rem 2rem;
+    width: 100%;
+    display: block;
+  }
+}
+
+.home-header {
+  width: 100%;
+  background: linear-gradient(
+    130deg,
+    var(--color-primary-dark) 35%,
+    white 35.1%,
+    white 65%,
+    var(--color-primary-dark) 65.1%
+  );
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2.5rem;
+  padding: 1rem 5rem;
+  color: var(--color-secondary-dark);
+  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.2);
+  user-select: none;
+
+  &__left {
+    width: 12rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .hero {
+    margin: 1rem auto;
+  }
+
+  .home-header {
+    background: linear-gradient(130deg, var(--color-primary-dark) 50%, white 50.1%);
+
+    padding: 1rem 2rem;
+    font-size: 2rem;
+
+    &__left {
+      display: none;
+    }
+  }
+}

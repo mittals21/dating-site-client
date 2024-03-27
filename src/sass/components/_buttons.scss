@@ -1,0 +1,40 @@
+.btn {
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+
+  padding: 0.5rem 1.5rem;
+  display: inline-block;
+  transition: all 0.1s;
+  border-radius: 10rem;
+  font-size: 2rem;
+  border: none;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:active {
+    transform: translateY(2px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  }
+
+  &--blue {
+    background-color: var(--color-secondary);
+    color: var(--color-primary-light);
+  }
+
+  &--light {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+  }
+
+  &--transparent {
+    background-color: transparent;
+    color: inherit;
+    box-shadow: none;
+    &:active {
+      transform: translateY(2px);
+      box-shadow: none;
+    }
+  }
+}

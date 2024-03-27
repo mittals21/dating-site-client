@@ -1,0 +1,23 @@
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  font-size: 8rem;
+  color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+
+  &--left {
+    left: 1rem;
+  }
+  &--right {
+    right: 1rem;
+  }
+
+  &:hover {
+    font-size: 8.5rem;
+  }
+
+  &:active {
+    font-size: 7.5rem;
+  }
+}
